@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import TextField, IntegerField, SubmitField
 # from stki_scripts.main import findSim
 from stki_scripts.w11 import findSim
-
+# 
 app = Flask(__name__)
 app.config.update(dict(SECRET_KEY='12345'))
 
