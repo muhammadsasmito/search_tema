@@ -14,7 +14,7 @@ class SearchTask(FlaskForm):
 def searchTask(form):
     keyword = form.keyword.data
     path_corpus = "./text files"
-    keyword = keyword.split()
+    # keyword = keyword.split()s
     # keyword normalize
     res = findSim(keyword, path_corpus)
     return res
