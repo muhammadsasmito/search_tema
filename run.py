@@ -20,7 +20,6 @@ def searchTask(form):
     return res
 
 @app.route('/', methods=['GET','POST'])
-
 def main():
     # create form
     sform = SearchTask(prefix='sform')
@@ -32,6 +31,12 @@ def main():
     
     # render HTML
     return render_template('home.html', sform = sform, data = data)
+
+@app.route('/text/<path:path>')
+def opentext(path):
+    fullpath = "./text/" + path
+    resp = open(fullpath).read()
+    return resp
 
 if __name__=='__main__':
     app.run(debug=True)
