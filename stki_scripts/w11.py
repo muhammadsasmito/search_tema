@@ -89,7 +89,7 @@ def findSim(keyword,pathcorpus):
         if score != 0.0:
             simi[key] = score
     # hasil return di zip dan sort
-    hasil_simi = w4.sortdic(simi, descending=True, 5)
+    hasil_simi = w4.sortdic(simi, descending=True, n=5)
     # print()
     # Jarak dengan list of bow
     sim = {}
