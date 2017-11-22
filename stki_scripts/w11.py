@@ -59,6 +59,6 @@ def findSim(keyword,pathcorpus):
     return test_similarity(dob(pathcorpus),keyword)
 
 # keyw = ['saya','yakin','dia','menolak','tembak','sebelum']
-keyw = ['salah','satu','contoh','penipuan']
+# keyw = ['salah','satu','contoh','penipuan']
 # print text_exam()
-print test_similarity(dob(path),keyw)
+# print test_similarity(dob(path),keyw)
