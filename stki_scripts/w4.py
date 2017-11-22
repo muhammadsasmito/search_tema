@@ -4,6 +4,19 @@ September 21 2017
 """
 import w3, os, math
 
+def word_5(word_dict,n=None,descending=True):
+    # temp1 = dict()
+    key = word_dict.keys()
+    val = word_dict.values()
+    # sort serharusnya reverse
+    # temp.sort()
+    key_ordered = [x for _, x in sorted(zip(val, key), reverse=descending)][:n]
+    val_ordered = sorted(val, reverse=descending)[:n]
+    # for range 5
+    # temp berisi key dan valuenya dari for
+
+    return zip(key_ordered,val_ordered)
+
 def bow(list_token):
     """
     fungsi untuk mengubah teks menjadi representasi numerik atau disebut vektor fitur.
@@ -82,7 +95,7 @@ def matrix(list_of_bow, normalized=False):
 
     # apabila parameter normalized False, return matrix
     # apabila parameter normalized True, lakukan normalisai L2 pada matrix, return matrix
-    if not normalized:
+    if not normalized:  
         return matrix_result
 
     else:
