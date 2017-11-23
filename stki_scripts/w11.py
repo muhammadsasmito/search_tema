@@ -14,7 +14,7 @@ def dob(path):
     for item in os.listdir(path):
         if item.endswith(".txt"):
             with open(path + "/" + item, 'r') as file:
-                articles[item] = w3.prepro_base(file.read())
+                articles[item] = w3.preprotext(file.read())
 
     # representasi bow
     list_of_bow = [] # membuat list kosong
@@ -26,7 +26,7 @@ def dob(path):
         # dict_of_bow[key] = list_of_bow.append(dic)    # append bow ke list kosong yg di atas
         dict_of_bow[key] = dic
     # membuat matrix
-    matrix_akhir = w4.matrix(list_of_bow) # jalankan fungsi matrix ke list_of_bow
+    matrix_akhir = w4.matrix(list_of_bow,normalized=True) # jalankan fungsi matrix ke list_of_bow
     return dict_of_bow
 
 def text_exam():
