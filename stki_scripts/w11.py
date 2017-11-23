@@ -52,13 +52,15 @@ def test_similarity(dict_document,keywod):
     table = tfidf.TfIdf()
     for key,value in dict_document.items():
          table.add_document(key, value)
-
-    return table.similarities(keyw)
+    # keywod = w3.prepro_base(keywod)
+    # print(keywod)
+    
+    return table.similarities(keywod)
 
 def findSim(keyword,pathcorpus):
-    return test_similarity(dob(pathcorpus),keyword)
+    return test_similarity(dob(path),keyword)
 
-# keyw = ['saya','yakin','dia','menolak','tembak','sebelum']
-keyw = ['yang']
+keyw = ['saya','yakin','dia','menolak','tembak','sebelum']
+# keyw = ['yang']
 # print text_exam()
 print test_similarity(dob(path),keyw)
