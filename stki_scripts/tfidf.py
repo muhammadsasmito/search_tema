@@ -51,6 +51,7 @@ class TfIdf:
             query_dict[k] = query_dict[k] / length
 
         # computing the list of similarities
+        # sims = []
         sims = {}
         for doc in self.documents:
             score = 0.0
@@ -59,8 +60,9 @@ class TfIdf:
                 if k in doc_dict:
                     score += (query_dict[k] / self.corpus_dict[k]) + (
                       doc_dict[k] / self.corpus_dict[k])
+            doct = doc[0]
             if score != 0:
-                sims[doc[0]] = score*100
-            # sims.append([doc[0], score])
+                sims[doct] = score
+                # sims.append([doc[0], score])
 
         return sims

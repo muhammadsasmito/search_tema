@@ -2,7 +2,7 @@
 author rochanaph
 September 4 2017
 """
-
+import os
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 ## tokenisasi
@@ -31,6 +31,9 @@ def remove_punctuation(string):
 ## remove stopwords
 path_stopwords = "./stopwords.txt"
 def remove_stopword(list_of_strings):
+    this_path = os.path.split(__file__)[0]
+    path_stopwords = os.path.join(this_path, "./stopwords.txt")
+
     with open(path_stopwords, 'r') as file:
         stopwords = file.readlines()
         stopwords = [item.rstrip('\n') for item in stopwords]
@@ -48,7 +51,7 @@ def preprotext(string):
     cleantext = [fold(item) for item in token]
     cleantext = [remove_punctuation(item) for item in cleantext]
     cleantext = remove_stopword(cleantext)
-    cleantext = [stemmer_fac(item) for item in cleantext]
+    # cleantext = [stemmer_fac(item) for item in cleantext]
     return " ".join(cleantext)
 
 def prepro_base(string):
