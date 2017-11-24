@@ -3,6 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import TextField, IntegerField, SubmitField
 # from stki_scripts.main import findSim
 from stki_scripts.w11 import findSim
+import os
 # 
 app = Flask(__name__)
 app.config.update(dict(SECRET_KEY='12345'))
@@ -20,7 +21,6 @@ def searchTask(form):
     return res
 
 @app.route('/', methods=['GET','POST'])
-
 def main():
     # create form
     sform = SearchTask(prefix='sform')
@@ -35,7 +35,8 @@ def main():
 
 @app.route('/text/<path:path>')
 def opentext(path):
-    fullpath = "./text/" + path
+    location = os.path.dirname(__file__)
+    fullpath = os.path.join(location, "static/text/", path)
     resp = open(fullpath).read()
     return resp
 
