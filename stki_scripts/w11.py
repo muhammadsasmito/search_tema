@@ -48,9 +48,16 @@ def article_limit(path):
 
     # representasi bow
     list_of_bow = [] # membuat list kosong
+    for key, value in articles.items(): # iterasi pasangan key, value
+        list_token = value.split() # cari kata2 dengan men-split
+        dic = w4.bow(list_token)   # membuat bow
+        list_of_bow.append(dic) # daftar list of bow
+
+    # membuat matrix dan jalankan fungsi matrix ke list_of_bow
+    matrix_akhir = w4.matrix(list_of_bow,normalized=True) 
+
     dict_of_bow = {} # membuat dict kosong
     for key, value in articles.items(): # iterasi pasangan key, value
-        # print key, value
         list_token = value.split() # cari kata2 dengan men-split
         dic = w4.bow(list_token)   # membuat bow
         # dict_of_bow[key] = list_of_bow.append(dic)    # append bow ke list kosong yg di atas
@@ -65,6 +72,19 @@ def article_limit(path):
     # membuat matrix
     # matrix_akhir = w4.matrix(list_of_bow,normalized=True) # jalankan fungsi matrix ke list_of_bow
     return dict_of_bow
+
+def article(path):
+    this_path = os.path.split(__file__)[0]
+    path = os.path.join(this_path, path)
+
+    # membaca sekaligus pre-processing semua artikel simpan ke dictionary
+    articles = {}
+    for item in os.listdir(path):
+        if item.endswith(".txt"):
+            with open(path + "/" + item, 'r') as file:
+                articles[item] = w3.prepro_base(file.read())
+
+    return articles
 
 def text_exam():
     text_dic = {
