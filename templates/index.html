@@ -24,6 +24,13 @@
   </head>
 
   <body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Pencarian Tema</a>
+        <!--<a class="btn btn-primary" href="#">Sign In</a> -->
+      </div>
+    </nav>
 
     <section class="call-to-action text-white text-center">
       <div class="overlay"></div>
@@ -56,19 +63,23 @@
 			<thead>
                 <td style="text-align:center">Nama Artikel</td>
                 <td style="text-align:center">Tingkat Kemiripan</td>
+				<td style="text-align:center">Kategori Artikel</td>
 				<td style="text-align:center">Tampilkan Dokumen</td>
+				
             </tr>
 			</thead>
 			{% for v in data %}
 			<tbody>
 				<tr>
 					<td style="text-align:center">{{ v[0] }}</td>
-					<td style="text-align:center">{{ v[1] }}</td>
+					<td style="text-align:center">{{ v[1] }}%</td>
+					<td style="text-align:center"></td>
 					<td style="text-align:center"> <a target="_blank" href="text/{{ v[0] }}">{{ v[0] }}</a> </td>
 				</tr>
 			</tbody>
 			{% endfor %}
 		</table>
+		<p class="text-muted small mb-4 mb-lg-0" style="text-align:center">&copy; M. Sasmito A.W | Ritzana Aisyah A | Alviska Galuh N | Hasbiyallah . Praktikum STKI , UGM</p>
 	</div>
 
 
