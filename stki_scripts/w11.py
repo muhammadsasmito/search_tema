@@ -5,7 +5,6 @@ import tfidf
 path = './text files'
 
 def dob(path):
-    
     this_path = os.path.split(__file__)[0]
     path = os.path.join(this_path, path)
 
@@ -24,9 +23,16 @@ def dob(path):
         list_token = value.split() # cari kata2 dengan men-split
         dic = w4.bow(list_token)   # membuat bow
         # dict_of_bow[key] = list_of_bow.append(dic)    # append bow ke list kosong yg di atas
-        dict_of_bow[key] = dic
+        # dict_of_bow[key] = dic
+        dic = w4.sortdic(dic,descending=True)
+        dic_bow = {}
+        # print dic 
+        for keys,values in dic:
+            # if values > 3: # dengan bobot setiap kata yang dihitung lebih dari 3 
+            dic_bow[keys] = values
+        dict_of_bow[key] = dic_bow
     # membuat matrix
-    matrix_akhir = w4.matrix(list_of_bow,normalized=True) # jalankan fungsi matrix ke list_of_bow
+    # matrix_akhir = w4.matrix(list_of_bow,normalized=True) # jalankan fungsi matrix ke list_of_bow
     return dict_of_bow
 
 def text_exam():
@@ -58,7 +64,7 @@ def test_similarity(dict_document,keywod):
 def findSim(keyword,pathcorpus):
     return test_similarity(dob(path),keyword)
 
-keyw = ['saya','yakin','dia','menolak','tembak','sebelum']
+# keyw = ['saya','yakin','dia','menolak','tembak','sebelum']
 # keyw = ['yang']
 # print text_exam()
-print test_similarity(dob(path),keyw)
+# print test_similarity(dob(path),keyw)
