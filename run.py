@@ -21,6 +21,13 @@ def searchTask(form):
 
 @app.route('/', methods=['GET','POST'])
 
+@app.route('/text/<path:path>')
+
+def opentext(path):
+    fullpath = "./text files/" + path
+    resp = open(fullpath).read()
+    return resp
+
 def main():
     # create form
     sform = SearchTask(prefix='sform')

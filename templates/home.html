@@ -1,45 +1,48 @@
 <html>
-  <head>
-    <title>Simple Task Manager</title>
-    <style>
-        table, td {
-           border: 1px solid black;
-        }
-        .head {
-            text-align: center;
-        }
-    </style>
-  </head>
-  <body>
-    <div class="head">
-        <h1>PENCARIAN TEMA</h1> 
-    </div>
-    <div align="center">
-        <form method="POST">
-            {{ sform.hidden_tag() }}
-            <fieldset>
-                <legend align="center">Inputkan Query</legend>
-                {{ sform.keyword }} 
-                {{ sform.search }}
-            </fieldset>
-        </form>
-    </div>
-    <br>
-    <br>
-    <div align="center">
-    <b>Document Result:</b><br><br>
-        <table>
-            <tr>
-                <td style="text-align:center">Nama file</td>
-                <td style="text-align:center">Skor</td>
-            </tr>
-        {% for v in data %}
-            <tr>
-            <td style="text-align:center">{{ v[0] }}</td>
-            <td style="text-align:center">{{ v[1] }}</td>
-            </tr>
-        {% endfor %}
-        </table>
-    </div>
-  </body>
-</html>
+    <head>
+      <title>Pencarian Tema Artikel</title>
+      <style>
+          table, td {
+             border: 1px solid black;
+          }
+          .head {
+              text-align: center;
+          }
+      </style>
+    </head>
+    <body>
+      <div class="head">
+          <h1>PENCARIAN TEMA</h1> 
+      </div>
+      <div align="center">
+          <form method="POST">
+              {{ sform.hidden_tag() }}
+              <fieldset>
+                  <legend align="center">Inputkan Query</legend>
+                  {{ sform.keyword }} 
+                  {{ sform.search }}
+              </fieldset>
+          </form>
+      </div>
+      <br>
+      <br>
+      <div align="center">
+      <b>Document Result:</b><br><br>
+          <table>
+              <tr>
+                  <td style="text-align:center">Nama file</td>
+                  <td style="text-align:center">Skor</td>
+                  <td style="text-align:center"> Buka file </td>
+              </tr>
+          {% for v in data %}
+              <tr>
+              <td style="text-align:center"> {{ v[0] }} </td>
+              <td style="text-align:center"> {{ v[1] }}% </td>
+              <td style="text-align:center"> <a target="_blank" href="text/{{ v[0] }}">{{ v[0] }}</a> </td>
+              </tr>
+          {% endfor %}
+          </table>
+      </div>
+    </body>
+  </html>
+  
