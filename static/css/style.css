@@ -1,0 +1,5 @@
+.call-to-action div.overlay{
+    background : -moz-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%);
+    background : -webkit-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%);
+    opacity: 0.9;
+}
