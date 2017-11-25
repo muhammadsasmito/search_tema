@@ -1,6 +1,6 @@
-# Praktikum STKI - Pencarian Keyword yang terdapat pada artikel
+# Praktikum STKI - Pencarian Tema yang terkandung pada artikel
 
-Implementasi pembuatan pencarian kata kunci yang terdapat pada artkel.
+Implementasi pembuatan pencarian kata kunci berupa tema yang terkandungs pada artkel.
 Semua teknis dibuat dari seluruh materi yang didapatkan dari mata kuliah Praktikum Sistem Temu Kembali Informasi dengan menggunakan Python.
 
 ### Petunjuk instalasi
@@ -21,4 +21,3 @@ python run.py
 - Muhammad Sasmito Adi Wibowo
 - Ritzana Aisyah
 - Alviska Galuh N
-- Hasbi

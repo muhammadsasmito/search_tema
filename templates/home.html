@@ -1,48 +1,93 @@
+<!DOCTYPE html>
 <html>
-    <head>
-      <title>Pencarian Tema Artikel</title>
-      <style>
-          table, td {
-             border: 1px solid black;
-          }
-          .head {
-              text-align: center;
-          }
-      </style>
-    </head>
-    <body>
-      <div class="head">
-          <h1>PENCARIAN TEMA</h1> 
-      </div>
-      <div align="center">
-          <form method="POST">
-              {{ sform.hidden_tag() }}
-              <fieldset>
-                  <legend align="center">Inputkan Query</legend>
-                  {{ sform.keyword }} 
-                  {{ sform.search }}
-              </fieldset>
-          </form>
-      </div>
-      <br>
-      <br>
-      <div align="center">
-      <b>Document Result:</b><br><br>
-          <table>
-              <tr>
-                  <td style="text-align:center">Nama file</td>
-                  <td style="text-align:center">Skor</td>
-                  <td style="text-align:center"> Buka file </td>
-              </tr>
-          {% for v in data %}
-              <tr>
-              <td style="text-align:center"> {{ v[0] }} </td>
-              <td style="text-align:center"> {{ v[1] }}% </td>
-              <td style="text-align:center"> <a target="_blank" href="text/{{ v[0] }}">{{ v[0] }}</a> </td>
-              </tr>
-          {% endfor %}
-          </table>
-      </div>
-    </body>
-  </html>
-  
+<head>
+	<meta charset="utf-8"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
+	<meta name="description" content="" /> 
+	<meta name="author" content="" />
+
+	<title>Pencarian Tema Artikel</title>
+
+	<!-- Bootstrap core CSS -->	 
+	<link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+
+	<!-- Custom fonts for this template -->
+
+	<link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
+
+	<link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet" type="text/css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+
+	<!-- Custom styles for this template -->
+
+	<link href="{{ url_for('static', filename='css/landing-page.min.css') }}" rel="stylesheet" />
+	
+</head>
+
+<body>
+	<section class="call-to-action text-white text-center">
+		<div class="overlay"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-9 mx-auto">
+					<h2 class="mb-4">Sekarang cari tema mudah dan cepat, disini!</h2>
+				</div>
+
+				<div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+					<form>
+			 			{{ sform.hidden_tag() }}
+						<div class="form-row">
+							<div class="col-12 col-md-9 mb-2 mb-md-0">
+				 				{{ sform.keyword }}
+							</div>
+
+							<div class="col-12 col-md-3">
+									 {{ sform.search }}								
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
+	<h4 style="text-align:center"> Hasil Pencarian Artikel : </h4>
+	<br>
+	<section>
+		
+	</section>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped table-hover">
+			<thead>
+				<td style="text-align:center">Nama Artikel</td>
+				<td style="text-align:center">Tingkat Kemiripan</td>
+				<td style="text-align:center">Tampilkan Dokumen</td>
+				</tr>
+			</thead>
+			{% for v in data %}
+			<tbody>
+				<tr>
+					<td style="text-align:center">{{ v[0] }}</td>
+					<td style="text-align:center">{{ v[1] }}</td>
+					<td style="text-align:center">
+						<a target="_blank" href="text/{{ v[0] }}">{{ v[0] }}</a>
+					</td>
+				</tr>
+			</tbody>
+			{% endfor %}
+		</table>
+	</div>
+	<!-- Bootstrap core JavaScript -->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js	') }}"></script>
+	<script>
+		$('#sform-keyword').addClass('form-control form-control-lg')
+		$('#sform-search').addClass('btn btn-block btn-lg btn-primary')
+		$('#sform-search').val('Cari')
+	</script>
+
+</body>
+</html>
