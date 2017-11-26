@@ -180,8 +180,11 @@ def test_kategori(path, path_kategori, keyw):
     hasil_findSim = findSim(keyw, path)
 
     list_judul = []
-    for key, value in hasil_findSim:
+    for key, value in hasil_findSim.items():
         list_judul.append(key)
+
+    this_path = os.path.split(__file__)[0]
+    path = os.path.join(this_path, path)
 
     words = {}
     for item in list_judul:
@@ -228,17 +231,18 @@ def test_kategori(path, path_kategori, keyw):
                 #print (nama_kategori)
                 simi[nama_kategori] = score
 
-        hasil_cek_kategori[judul_file_hasil_cosine] = w4.sortdic(simi, descending=True, n=1)
+        hasil_cek_kategori[judul_file_hasil_cosine] = w4.sortdic(simi, descending=True, n=1)[0]
+        # hasil_cek_kategori[judul_file_hasil_cosine] = simi
 
         #hasil_cek_kategori[judul_file_hasil_cosine] = w4.sortdic(simi, descending=True, n=1)
     #kategori = hasil_cek_kategori.values()
     #print (hasil_cek_kategori)
     return hasil_cek_kategori
 
-def final_terakhir(path, path_kategori, keyw):
+def final_terakhir(keyw,path, path_kategori = './text kategori'):
     similarity = findSim(keyw,path)
     kategori = test_kategori(path,path_kategori,keyw)
-    final = zip(similarity, kategori , descending=True)
+    final = w4.sortdic_last(similarity, kategori , descending=True)
     return final
 
 keyw = "jokowi adalah presiden"

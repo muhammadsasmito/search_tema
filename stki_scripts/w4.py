@@ -31,31 +31,31 @@ def bow(list_token):
     return bow_dict
 
 
-# def sortdic(dic, descending=True, n=None):
-#     """
-#     fungsi untuk mengurutkan dictionary hasil representasi bag of words
-#     :param dic: dictionary key,value = string,int
-#     :param descending: parameter utk menentukan urutan menaik/menurun
-#     :param n: jumlah elemen yg ingin ditampilkan
-#     :return: dictionary bag of words yg sudah terurut berdasarkan value jumlah kata
-#     """
-#     # python 3
-#     # key = list(dic.keys())
-#     # val = list(dic.values())
-#     # python 2
-#     key = dic.keys()
-#     val = dic.values()
-#
-#     key_ordered = [x for _, x in sorted(zip(val, key), reverse=descending)][:n]
-#     val_ordered = sorted(val, reverse=descending)[:n]
-#
-#     ## python 3
-#     # return list(zip(key_ordered,val_ordered))
-#     # python 2
-#     return zip(key_ordered,val_ordered)
+def sortdic(dic, descending=True, n=None):
+    """
+    fungsi untuk mengurutkan dictionary hasil representasi bag of words
+    :param dic: dictionary key,value = string,int
+    :param descending: parameter utk menentukan urutan menaik/menurun
+    :param n: jumlah elemen yg ingin ditampilkan
+    :return: dictionary bag of words yg sudah terurut berdasarkan value jumlah kata
+    """
+    # python 3
+    # key = list(dic.keys())
+    # val = list(dic.values())
+    # pythonz 2
+    key = dic.keys()
+    val = dic.values()
+
+    key_ordered = [x for _, x in sorted(zip(val, key), reverse=descending)][:n]
+    val_ordered = sorted(val, reverse=descending)[:n]
+
+    ## python 3
+    # return list(zip(key_ordered,val_ordered))
+    # python 2
+    return zip(key_ordered,val_ordered)
 
 
-def sortdic(dic, baris, descending=True, n=None):
+def sortdic_last(dic, baris, descending=True, n=None):
     """
     fungsi untuk mengurutkan dictionary hasil representasi bag of words
     :param dic: dictionary key,value = string,int
