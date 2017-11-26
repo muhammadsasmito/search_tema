@@ -3,3 +3,39 @@
     background : -webkit-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%);
     opacity: 0.9;
 }
+
+div.footer-wrapper{
+    /* background: #27ae60cc ;
+    background : -moz-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%);
+    background : -webkit-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%); */
+    /* opacity: 1; */
+    text-align: center;
+    padding-top: 2%;
+    /* tessss */
+}
+
+#team div.overlay{
+    /* background: #27ae60cc; */
+    background : -moz-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%);
+    background : -webkit-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%);
+    opacity: 0.9;
+    /* tessss */
+}
+
+.footer-wrapper2{
+    color: #000000;
+    background: #27ae60cc;
+    background : -moz-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%);
+    background : -webkit-repeating-linear-gradient(left top,#27ae60cc 0%,#1abc9c 100%);
+    opacity: 1;
+    /* tessss */
+}
+
+.img-circle{
+    border-radius: 50%;
+}
+
+.team-thumb {
+    width: 150px;
+    height: 150px;
+}

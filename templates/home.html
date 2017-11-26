@@ -21,9 +21,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
 
 	<!-- Custom styles for this template -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/fav.png') }}">
 
 	<link href="{{ url_for('static', filename='css/landing-page.min.css') }}" rel="stylesheet" />
 	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+	<link href="{{ url_for('static', filename='css/style_add.css') }}" rel="stylesheet" />
 	
 </head>
 
@@ -34,6 +36,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-9 mx-auto">
+					<div style="width:30%;display:flex;margin:auto;margin-bottom:3%">
+						<img style="margin:auto" src="{{ url_for('static', filename='img/fav.png') }}" alt="">
+						<h4>Referensi Artikel Tema</h4>
+					</div> 
 					<h2 class="mb-4">Sekarang cari tema mudah dan cepat, disini 😀!</h2>
 				</div>
 
@@ -55,32 +61,110 @@
 		</div>
 	</section>
 	<br>
-	<h4 style="text-align:center"> Hasil Pencarian Artikel : </h4>
 	<br>
-	<section>
-		
+	<section class="single-page scrollblock">
+		<div class="container" style="margin-bottom:5%">
+			<div class="align">
+				<i class="icon-group-circled"></i>
+			</div>
+			<h4 style="text-align:center"> Hasil Pencarian Artikel : </h4>
+			<br>
+			<div class="row">
+				<div class="table-responsive">
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<td style="text-align:center">Nama Artikel</td>
+							<td style="text-align:center">Tingkat Kemiripan</td>
+							<td style="text-align:center">Tampilkan Dokumen</td>
+							</tr>
+						</thead>
+						{% for v in data %}
+						<tbody>
+							<tr>
+								<td style="text-align:center">{{ v[0] }}</td>
+								<td style="text-align:center">{{ v[1] }}</td>
+								<td style="text-align:center">
+									<a target="_blank" href="text/{{ v[0] }}">{{ v[0] }}</a>
+								</td>
+							</tr>
+						</tbody>
+						{% endfor %}
+					</table>
+				</div>
+				<hr class="featurette-divider">
+			</div>
+		</div>
 	</section>
-	<div class="table-responsive">
-		<table class="table table-bordered table-striped table-hover">
-			<thead>
-				<td style="text-align:center">Nama Artikel</td>
-				<td style="text-align:center">Tingkat Kemiripan</td>
-				<td style="text-align:center">Tampilkan Dokumen</td>
-				</tr>
-			</thead>
-			{% for v in data %}
-			<tbody>
-				<tr>
-					<td style="text-align:center">{{ v[0] }}</td>
-					<td style="text-align:center">{{ v[1] }}</td>
-					<td style="text-align:center">
-						<a target="_blank" href="text/{{ v[0] }}">{{ v[0] }}</a>
-					</td>
-				</tr>
-			</tbody>
-			{% endfor %}
-		</table>
+	<section id="team" class="single-page scrollblock call-to-action text-white text-center">
+		<div class="overlay"></div>
+
+		<div class="container">
+			<div class="row" style="text-align:center">
+				<div class="col-md-12">
+					<h1>Team kami</h1>
+				</div>
+			</div>
+			<!-- Five columns -->
+			<div class="row">
+				<div class="col-md-3">
+					<div class="teamalign">
+						<img class="team-thumb img-circle" src="/static/img/sash.jpg" alt=""> </div>
+					<h3>Muhammad Sasmito Adi Wibowo</h3>
+					<div class="job-position">15/380439/SV/08246</div>
+				</div>
+				<!-- ./span2 -->
+				<div class="col-md-3">
+					<div class="teamalign">
+						<img class="team-thumb img-circle" src="/static/img/vis.jpg" alt="" style="width:150px"> </div>
+					<h3>Alviska Galuh N</h3>
+					<div class="job-position">15/386051/SV/09437</div>
+				</div>
+				<!-- ./span2 -->
+				<div class="col-md-3">
+					<div class="teamalign">
+						<img class="team-thumb img-circle" src="/static/img/ais.jpg" alt=""> </div>
+					<h3>Ritzana Aisyah</h3>
+					<div class="job-position">15/380445/SV/08252</div>
+				</div>
+				<!-- ./span2 -->
+				<div class="col-md-3">
+					<div class="teamalign">
+						<img class="team-thumb img-circle" src="/static/img/rediset.jpg" alt=""> </div>
+					<h3>Hasbiyallah</h3>
+					<div class="job-position">15/386081/SV/09467</div>
+				</div>
+				<!-- ./span2 -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-md-12 col-md-offset-2">
+					<hr class="featurette-divider">
+					<div class="featurette">
+						<h2 class="featurette-heading">Tugas Akhir Praktikum STKI
+							<span class="muted">| sedikit tentang aplikasi</span>
+						</h2>
+						<p>Pencarian Tema yang terkandung pada artikel Implementasi pembuatan pencarian kata kunci berupa tema yang terkandung pada artkel. Semua teknis dibuat dari seluruh materi yang didapatkan dari mata kuliah Praktikum Sistem Temu Kembali
+						Informasi dengan menggunakan Python.</p>
+					</div>
+					<!-- /.featurette -->
+					<hr class="featurette-divider">
+				</div>
+				<!-- .span10 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<div class="footer-wrapper">
+		<div class="container">
+			<footer>
+				<small>&copy;2017 <a style="color:#27ae60cc" href="https://github.com/muhammadsasmito/search_tema" target="_blank">Sash Team in Hots</a> - Sekolah Vokasi Universitas Gadjah Mada.</small>
+			</footer>
+		</div>
+		<br>
+		<!-- ./container -->
 	</div>
+
 	<!-- Bootstrap core JavaScript -->
 	<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js	') }}"></script>

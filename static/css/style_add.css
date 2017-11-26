@@ -1,0 +1,253 @@
+/*!
+ * LEGEND - Free Responsive One Page Template
+ *
+ * Copyright 2013
+ * Created by: Inbetwin Network
+ * URL: http://inbetw.in
+ * Designed and built based on Twitter Bootstrap. */
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Non-semantic
+04 Navbar
+05 Single-Page Sections
+06 Footer
+07 Bootstrap Carousel
+08 Buttons
+09 Media queries 
+===========================
+*/
+
+@font-face {
+    font-family: 'Patua One';
+    src: url("../vendor/font/PatuaOne-Regular.otf");
+}
+
+@font-face {
+    font-family: "Quattrocento";
+    src: url("../vendor/font/Quattrocento-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Quattrocento-Bold.ttf";
+    src: url("../vendor/font/Quattrocento-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../vendor/font/OpenSans-Regular.ttf") format("truetype");
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* Team and Contact */
+
+section#team, section#contact {
+    color: #e4e5e2;
+    background: url(../img/bg-showcase-2.jpg);
+    /* opacity: 0.5; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+section#team .align, section#contact .align {
+	font-size: 6em;
+	text-align: center;
+}
+#team h1, #contact h1 {
+	font-size: 3em;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+#contact, #team {
+	padding-top: 4.75em;
+}
+#team {
+	padding-bottom: 0;
+}
+#contact {
+	padding-bottom: 0;
+}
+/* team */
+
+#team h3 {
+	font-size: 26px;
+	margin-top: 24px;
+	margin-bottom: 0px;
+}
+#team h3, .job-position {
+	text-align: center;
+}
+#team .featurette {
+	text-align: center;
+	font-size: 21px;
+}
+#team h2.featurette-heading {
+	margin-bottom: 24px;
+}
+.teamalign {
+	text-align:center
+}
+.team-thumb {
+	margin-top: 26px;
+	text-align:center;
+}
+.job-position {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: .46155em;
+}
+/* Featurettes */
+
+
+
+hr.featurette-divider {
+	margin: 3em 0;
+	border-width: 0;
+	height: 9px;
+}
+/* ---------------------------------------------------------------------------------------------------------- 
+06 Footer ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+#map-wrapper {
+	margin-top: 20px;
+}
+footer {
+	text-align: center;
+	color: #1a1a1a;
+	font-weight: bold;
+}
+footer p {
+	margin-top: -130px;
+}
+/* ---------------------------------------------------------------------------------------------------------- 
+07 Bootstrap Carousel ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+    
+    
+    /* Smartphones (portrait and landscape) ----------- */
+	@media only screen  and (min-device-width : 320px)  and (max-device-width : 480px) {
+ #feature-headline {
+ background: transparent;
+ text-indent: 0;
+ overflow: visible;
+ margin-top: 1.5em;
+}
+ #navbar-inner {
+ margin:	0;
+}
+ #banner { /*display: none;*/
+}
+ section.single-page {
+ padding: 1em 0;
+}
+		
+		/* Feature */
+		#feature-badge {
+/*	display: none; */
+		}
+		
+		/* Portfolio & News */
+		
+		#news h1 {
+ background: transparent;
+}
+ #news h1 span {
+ background: transparent;
+ padding: 0;
+}
+ #portfolio .container {
+ top: 0 !important;
+}
+ #feature article p {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 26px; /* font-size: 26px; */
+ margin-bottom: 0;
+ line-height: 30px;
+ color: #fff;
+}
+ .img-news {
+ width: 100%;
+}
+ .img-news {
+ margin-right: auto;
+ margin-left: auto;
+ display: block;
+}
+ section#portfolio hgroup h2 {
+ margin-top: 1.5em;
+}
+	
+		/* Services */
+		
+		#services h1 {
+ background: transparent;
+}
+ #services h1 span {
+ background: transparent;
+ padding: 0;
+}
+ section#services h2 {
+ margin-bottom: 0.25em;
+}
+ section#services h2, section#services ul {
+ text-align: center;
+}
+		
+
+	    /* Testimonials */
+	    
+		section#testimonials { /*display: none;*/
+}
+	
+		/* team */
+		
+		#team .team-thumb {
+ margin-right: auto;
+ margin-left: auto;
+ width: 150px;
+ display: block;
+ text-align:center
+}
+ .job-position: {
+ margin-bottom: 1.5em;
+}
+ .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+ margin-left: auto;
+ margin-right: auto;
+}
+		
+}
+
+	/* Smartphones (landscape) ----------- */
+	@media only screen  and (min-width : 321px) {
+}
+	
+	/* Smartphones (portrait) ----------- */
+	@media only screen  and (max-width : 320px) {
+}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px) {
+}
+	
+	/* iPads (landscape) ----------- */
+	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px)  and (orientation : landscape) {
+/* Styles */
+	}
+	
+	/* iPads (portrait) ----------- */
+	@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px)  and (orientation : portrait) {
+/* Styles */
+	}
+	
+	/* Desktops and laptops ----------- */
+	@media only screen  and (min-width : 1224px) {
+/* Styles */
+	}

@@ -35,10 +35,13 @@ def main():
 
 @app.route('/text/<path:path>')
 def opentext(path):
+    textcontent = {}
     location = os.path.dirname(__file__)
     fullpath = os.path.join(location, "static/text/", path)
     resp = open(fullpath).read()
-    return resp
+    textcontent[0] = resp.split(',',1)
+
+    return render_template('text.html', data= textcontent)
 
 if __name__=='__main__':
     app.run(debug=True)
