@@ -1,0 +1,44 @@
+Teknologi adalah keseluruhan sarana untuk menyediakan barang-barang yang diperlukan bagi kelangsungan dan kenyamanan hidup manusia.
+
+Penggunaan teknologi oleh manusia diawali dengan pengubahan sumber daya alam menjadi alat-alat sederhana. Penemuan prasejarah tentang kemampuan mengendalikan api telah menaikkan ketersediaan sumber-sumber pangan, sedangkan penciptaan roda telah membantu manusia dalam beperjalanan dan mengendalikan lingkungan mereka. Perkembangan teknologi terbaru, termasuk di antaranya mesin cetak, telepon, dan Internet, telah memperkecil hambatan fisik terhadap komunikasi dan memungkinkan manusia untuk berinteraksi secara bebas dalam skala global. Tetapi, tidak semua teknologi digunakan untuk tujuan damai; pengembangan senjata penghancur yang semakin hebat telah berlangsung sepanjang sejarah, dari pentungan sampai senjata nuklir.
+
+Teknologi telah mempengaruhi masyarakat dan sekelilingnya dalam banyak cara. Di banyak kelompok masyarakat, teknologi telah membantu memperbaiki ekonomi (termasuk ekonomi global masa kini) dan telah memungkinkan bertambahnya kaum senggang. Banyak proses teknologi menghasilkan produk sampingan yang tidak dikehendaki, yang disebut pencemar, dan menguras sumber daya alam, merugikan, dan merusak Bumi dan lingkungannya. Berbagai macam penerapan teknologi telah memengaruhi nilai suatu masyarakat, dan teknologi baru seringkali mencuatkan pertanyaan-pertanyaan etika baru. Sebagai contoh, meluasnya gagasan tentang efisiensi dalam konteks produktivitas manusia, suatu istilah yang pada awalnynya hanya menyangkut permesinan, contoh lainnya adalah tantangan norma-norma tradisional.
+
+bahwa keadaan ini membahayakan lingkungan, dan mengucilkan manusia; penyokong paham-paham seperti transhumanisme dan tekno-progresivisme memandang proses teknologi yang berkelanjutan sebagai hal yang menguntungkan bagi masyarakat, dan kondisi manusia. Tentu saja, paling sedikit hingga saat ini, diyakini bahwa pengembangan teknologi hanya terbatas bagi umat manusia, tetapi kajian-kajian ilmiah terbaru mengisyaratkan bahwa primata lainnya, dan komunitas lumba-lumba tertentu telah mengembangkan alat-alat sederhana, dan belajar untuk mewariskan pengetahuan mereka kepada keturunan mereka.
+
+
+Jakarta - Peminat iPhone berukuran 4 inch masih cukup banyak. Tak heran jika Apple akan merilis kembali ponsel dengan ukuran tersebut.
+
+Berdasarkan laporan dari media asal China, CNMO, Apple tengah menyiapkan iPhone SE 2. Kehadiran ponsel tersebut tidak terlepas dari larisnya iPhone SE di sejumlah wilayah. 
+
+Diprediksi iPhone SE 2 akan diluncurkan di paruh kedua 2018. Bisa jadi, Apple akan mengumumkannya di hajatan bulan Maret atau menjadi kejutan kecil di ajang Worldwide Developers Conference 2018.
+
+FotoINET: iPhone SE 2 Bagai iPhone X Mini
+
+Mengacu pada rumor, iPhone SE 2 akan punya spesifikasi seperti iPhone 7. Dapur pacunya diserahkan pada chipset A10. Masih mengusung layar 4 inch dan dilengkapi dengan Face ID.
+
+Soal harga, kemungkinan tidak jauh berbeda dengan iPhone SE saat dirilis Maret 2016. Kala itu, ponsel ini dilepas seharga USD 450 atau sekitar Rp 6,08 juta.
+
+Jakarta - Ada kejadian mengejutkan yang terjadi sehari sebelum iPhone X mulai dijual di kandang Samsung -- Korea Selatan --, yaitu digerebeknya kantor Apple di negara tersebut.
+
+Hal ini terjadi pada Kamis (23/11/2017) lalu, di mana sejumlah aparat pemerintah Korsel mendatangi kantor pusat Apple di Korea Selatan dan menanyai sejumlah karyawannya soal praktik bisnis Apple di Negeri Ginseng tersebut.
+
+Tak jelas apa yang menyebabkan pemerintah Korsel menggerebek kantor Apple itu. Namun ada yang berspekulasi kalau ini adalah salah satu langkah Korsel untuk mengganggu peluncuran iPhone X di Korsel, demikian dikutip detikINET dari Phone Arena, Jumat (24/11/2017).
+
+Ada juga yang berpendapat kalau pemerintah Korsel takut Apple akan memonopoli bisnis ponsel di negara tersebut. Sebagai contoh, pada 2015, Apple menguasai pasar ponsel di Korsel sebesar 33%, yang sampai memaksa komisi anti monopoli di Korsel menginvestigasi apakah perusahaan asal AS itu bisa melemahkan pasar ponsel domestik.
+
+Samsung punya caranya sendiri untuk 'melawan' peluncuran iPhone X di kandangnya itu. Caranya dengan meluncurkan Galaxy Upgrade Program, yang memberikan Galaxy S8 atau Galaxy Note8 ke 10 ribu pengguna iPhone selama sebulan.
+
+Jakarta - Setelah meluncurkan seri browser terbaru, Firefox terus mempertahankan laju positifnya dengan menghadirkan fitur terbaru, terutama bagi pemerhati cyber security.
+
+Fitur ini memungkinkan para pengguna untuk mendapat peringatan saat mengunjungi sebuah situs yang berpotensi, atau sudah mengalami, pencurian data.
+
+Dalam mewujudkannya, Firefox bekerja sama dengan Have I Been Pwned, sebuah situs yang dapat memeriksa email dan memberi tahu apakah alamat email tersebut telah mengalami pencurian data atau dokumen dari para hacker.
+
+Troy Hunt, ahli keamanan siber dari Have I Been Pwned, mengkonfirmasi kolaborasi tersebut melalui sebuah kicauan di media sosial Twitter lewat akun @troyhunt.
+
+"Firefox tengah mencari situs apa saja yang bisa jadi sudah dibajak. Kami juga sedang berdiskusi mengenai penggunaan data tersebut di masa yang akan datang," ujar Troy, seperti dilansir detikINET dari Engadget pada Jumat (24/11/2017).
+
+Meskipun fitur ini masih dalam tahap awal pengembangan, namun user dapat mengunduhnya melalui Github, lalu memasukkannya dalam browser Firefox.
+
+"Ini merupakan usaha yang baik dari Firefox dalam membuka lebih luas mengenai praktik pencurian data," pungkas Troy.	(fyk/fyk)
