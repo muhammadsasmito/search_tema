@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect
 from flask_wtf import FlaskForm
 from wtforms import TextField, IntegerField, SubmitField
 # from stki_scripts.main import findSim
-from stki_scripts.w11 import findSim
+from stki_scripts.w11 import final_terakhir
 import os
 # 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def searchTask(form):
     path_corpus = "./text files"
     # keyword = keyword.split()
     # keyword normalize
-    res = findSim(keyword, path_corpus)
+    res = final_terakhir(keyword, path_corpus)
     return res
 
 @app.route('/', methods=['GET','POST'])
